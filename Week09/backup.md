@@ -47,121 +47,19 @@ $$ \sigma =\sqrt{\frac{1}{N}\sum\limits_{i=1}^N (x_i - \mu)^2} $$
 
 </span>
 
-##
 
-![bg left:35% 100%](<images/sd formula.png>)
-
-標準偏差の求め方 
-
-順番 |　統計 |　記号 | 式
---|--|--|--
-1| 平均値|$\mu$ | $\frac{1}{N}\sum x_i$
-2| 偏差 | - |$x_i-\mu$
-3| 偏差平方 | - |$(x_i-\mu)^2$
-4| 偏差平方の和 | - |$\sum(x_i-\mu)^2$
-5| 分散 | $\sigma^2$ |$\frac{1}{N}\sum(x_i-\mu)^2$
-6| 標準偏差 | $\sigma$ |$\sqrt{\sigma^2}$
-
-　
-##
-
-![width:1000](<images/sd with anime.png>)
-##
-
-平均値の計算: 
-
-<latex>
-
-$$ \mu =\frac{1}{N}\sum\limits_{i=1}^N x_i $$
-
-</latex>
-
-すなわち
-<br>
-
-<latex>
-
-$$ \mu =\frac{(40_{ピカチュ} + 129_{ドラえもん} + 158_{初音ミク} + 174_{ルフィー}+ 189_{花道})}{5} = 138cm $$
-
-</latex>
-
+### 正規分布
+![width:800](../images/bell%20curve.png)
+The "bell" curve
 
 ##
-分散の計算：
-
-<latex>
-
-$$ \sigma^2 ={\frac{1}{N}\sum\limits_{i=1}^N (x_i - \mu)^2} $$
-
-</latex>
-
-##
-\
-すなわち
-
-
-$$
-\begin{aligned}
-
- \sigma^2 
- &={\frac{(40 - 90)^2+(129-90)^2+(158-90)^2+(174-90)^2+(189-90)^2}{5}} \\
- 
- &= \frac{13982}{5} \\
- 
- &= 2796.4
- 
-\end{aligned}
-$$
-
-
-##
-標準偏差の計算: 
-
-
-<latex>
-
-$$ \sigma =\sqrt{\frac{1}{N}\sum\limits_{i=1}^N (x_i - \mu)^2} $$
-
-</latex>
+![Alt text](../images/sd1.png)
 
 ##
 
-<latex>
-
-$$ \sigma =\sqrt{2796.4} $$
-
-</latex>
-<br>
-<br>
-
-<latex>
-
-$$ \sigma  \approx 53cm
- $$
+![Alt text](../images/sd2.png)
 
 
-</latex>
-
-
-##
-
-![width:800](images/anime1.png)
-
-##
-
-![width:800](images/anime2.png)
-
-##
-
-![width:800](images/anime3.png)
-
-##
-
-![width:800](images/anime4.png)
-
-##
-
-![width:800](images/anime5.png)
 
 
 # Topic #1: 変動係数<br>Coefficient of Variation
@@ -178,26 +76,18 @@ CV= σ/μ
 
 ##
 
-<large>🧐</large>
-
-そもそも変動係数っていつ使うの？
-
-##
-
-<large>🤓</large>
+変動係数っていつ使うの？
 
 ある測定をカテゴリー別で<plum>比べたい</plum>時！
 
 ##
 
-例えば：50m走
+例えば：男子・女子の50m走
 
 <large>
-🏃🏻‍♀️🏃🏻‍♂️
 
-6歳の時と19歳の時とどっちの方が
-ばらつきある？
-男と女のばらつきはどう？
+6歳の時と19歳の時のデータの
+ばらつきはどう違う？
 
 </large>
 
@@ -219,9 +109,8 @@ CV= σ/μ
 1. グループに分かれる
 1. [このページ](https://www.e-stat.go.jp/stat-search/files?page=1&layout=datalist&toukei=00402102&tstat=000001088875&cycle=0&tclass1=000001133904&tclass2val=0)から好きな項目を選ぶ
 1. EXCELファイルをダウンロードして開く
-1. 新しいカラムを作って、変動係数を計算する
-1. 変動係数は：標準偏差/平均値
-1. 面白く結果発表！
+1. 変動係数を計算する
+1. 面白く発表！
 
 
 # Topic #2: 標準化とZ得点<br>Z-Score
@@ -249,16 +138,7 @@ $$ Z得点 = \frac{x_i - \mu}{\sigma} $$
 
 <latex>
 
-$$ 
-\begin{aligned}
-
-先生のZ得点 
-&= \frac{177 - 165}{7} \\
-&= 1.71 
-
-\end{aligned}
-
-$$
+$$ Z得点 = \frac{177 - 165}{7} = 1.71 $$
 
 </latex>
 
@@ -289,27 +169,19 @@ https://www.mathsisfun.com/data/standard-normal-distribution-table.html
 
 ##
 
-<large>🤓
-偏差値は、テストや試験の結果を分かりやすく比較するための指標です。
+偏差値は、テストや試験の結果を分かりやすく比較するための指標です。偏差値は、あなたのスコアが他の人々と比べてどれくらいの位置にあるかを示す数値です。
 
 ##
-<large>🤓
-すなわち
-
-偏差値は、あなたのスコアが他の人々と比べてどれくらいの位置にあるかを示す数値です。
-
-##
-
-<large>
-😮
 
 それって変動係数と一緒じゃないの？
 
 ##
-<large>🤓
+
 You are right! But the difference is...
 
 偏差値のスケールでは、<plum>50</plum>が平均値とされ、標準偏差が<plum>10</plum>とされています。
+
+偏差値の計算には、次の手順を使用します。
 
 
 ##
@@ -333,6 +205,10 @@ $$ 偏差値 = 1.71 \times 10 + 50 = 67.1 $$
 </latex>
 
 
+
+
+### 
+では、あなたは？
 
 
 ### Excel playground
